@@ -1,4 +1,8 @@
 .indicator {
+  display: flex;
+  flex-direction: column;
+  gap: 3.5px;
+
   &__value {
     font-size: 14px;
     font-weight: 600;
@@ -21,10 +25,5 @@
     &_negative {
       color: #F64747;
     }
-  }
-
-  &__separator {
-    width: 64px;
-    border: 1px solid rgba(0, 0, 0, 0.1)
   }
 }
