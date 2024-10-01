@@ -5,6 +5,7 @@
 }
 .header__profile {
   display: flex;
+  align-items: center;
   gap: 12px;
 }
 .header__avatar {
@@ -12,19 +13,24 @@
   height: 32px;
   border-radius: 50%;
 }
+.header__text-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
 .header__name {
-  margin-bottom: 2px;
   font-size: 14px;
   font-weight: 600;
   line-height: 16px;
 }
-.header__status {
+.header__caption {
   color: rgba(0, 0, 0, 0.4);
   font-size: 14px;
   line-height: 16px;
 }
 .header__indicators {
   display: flex;
+  align-items: end;
   gap: 12px;
 }
 

@@ -5,6 +5,7 @@
 
   &__profile {
     display: flex;
+    align-items: center;
     gap: 12px;
   }
 
@@ -14,14 +15,19 @@
     border-radius: 50%;
   }
 
+  &__text-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+  }
+
   &__name {
-    margin-bottom: 2px;
     font-size: 14px;
     font-weight: 600;
     line-height: 16px;
   }
 
-  &__status {
+  &__caption {
     color: #00000066;
     font-size: 14px;
     line-height: 16px;
@@ -29,6 +35,7 @@
 
   &__indicators {
     display: flex;
+    align-items: end;
     gap: 12px;
   }
 }
