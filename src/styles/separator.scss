@@ -1,0 +1,10 @@
+.separator {
+  margin: 20px 24px;
+  height: 1px;
+  background: #0000001A;
+
+  &_small {
+    width: 64px;
+    margin: 0;
+  }
+}

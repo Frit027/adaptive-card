@@ -1,0 +1,11 @@
+.separator {
+  margin: 20px 24px;
+  height: 1px;
+  background: rgba(0, 0, 0, 0.1019607843);
+}
+.separator_small {
+  width: 64px;
+  margin: 0;
+}
+
+/*# sourceMappingURL=separator.css.map */
