@@ -1,0 +1,25 @@
+.indicator__value {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 16px;
+}
+.indicator__value_normal {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 14px;
+}
+.indicator__value_positive {
+  color: #62B435;
+}
+.indicator__value_neutral {
+  color: rgba(0, 0, 0, 0.4);
+}
+.indicator__value_negative {
+  color: #F64747;
+}
+.indicator__separator {
+  width: 64px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+/*# sourceMappingURL=indicator.css.map */

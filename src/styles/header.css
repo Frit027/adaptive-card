@@ -1,0 +1,31 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  margin: 24px 24px 0;
+}
+.header__profile {
+  display: flex;
+  gap: 12px;
+}
+.header__avatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+}
+.header__name {
+  margin-bottom: 2px;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 16px;
+}
+.header__status {
+  color: rgba(0, 0, 0, 0.4);
+  font-size: 14px;
+  line-height: 16px;
+}
+.header__indicators {
+  display: flex;
+  gap: 12px;
+}
+
+/*# sourceMappingURL=header.css.map */
