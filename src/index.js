@@ -2,6 +2,7 @@ const classes = {
     textContainer: 'text-container',
     text: 'text-container__text',
     maxHeightTextContainer: 'text-container_max-height',
+    gradient: 'text-container_gradient',
     button: 'footer__more-text-button',
     arrow: 'footer__arrow',
     arrowUp: 'footer__arrow_up',
@@ -15,6 +16,7 @@ const initScript = () => {
 
   button.addEventListener('click', () => {
       arrow.classList.toggle(classes.arrowUp);
+      textContainer.classList.toggle(classes.gradient);
 
       textContainer.style.maxHeight = textContainer.classList.contains(classes.maxHeightTextContainer)
         ? `${text.offsetHeight}px`
