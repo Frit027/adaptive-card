@@ -1,6 +1,17 @@
-.text {
-  margin: 0 24px 24px;
-  font-size: 16px;
-  line-height: 24px;
-  color: #00000099;
+.text-container {
+  display: flex;
+
+  &__text {
+    max-height: 120px;
+    margin: 0 24px 24px;
+    font-size: 16px;
+    line-height: 24px;
+    color: #00000099;
+    overflow: hidden;
+    transition: max-height .6s ease-in;
+
+    &_max-height {
+      max-height: 456px;
+    }
+  }
 }
