@@ -54,5 +54,15 @@
       font-size: 18px;
       line-height: 22px;
     }
+
+    &::before {
+      content: '3.20';
+    }
+
+    @include mobile {
+      &::before {
+        content: '20.15';
+      }
+    }
   }
 }

@@ -51,5 +51,13 @@
     line-height: 22px;
   }
 }
+.coefficient__value::before {
+  content: "3.20";
+}
+@media screen and (max-width: 743px) {
+  .coefficient__value::before {
+    content: "20.15";
+  }
+}
 
 /*# sourceMappingURL=coefficient.css.map */
