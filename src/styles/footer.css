@@ -2,6 +2,7 @@
   position: relative;
   display: flex;
   align-items: center;
+  margin: 0 -24px;
   padding: 24px;
   background: rgba(240, 241, 242, 0.4);
 }
