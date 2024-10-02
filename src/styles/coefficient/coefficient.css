@@ -21,7 +21,7 @@
   display: inline-block;
   width: 24px;
   height: 13.5px;
-  background: url("../images/logo.svg") no-repeat center/contain;
+  background: url("../../images/logo.svg") no-repeat center/contain;
 }
 .coefficient__text {
   width: 81px;

@@ -1,4 +1,4 @@
-@import 'mixins';
+@import '../mixins';
 
 .coefficient {
   display: flex;
@@ -22,7 +22,7 @@
     display: inline-block;
     width: 24px;
     height: 13.5px;
-    background: url('../images/logo.svg') no-repeat center / contain;
+    background: url('../../images/logo.svg') no-repeat center / contain;
   }
 
   &__text {
