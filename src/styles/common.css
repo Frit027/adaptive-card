@@ -3,6 +3,7 @@
   src: url("../fonts/proximanova_regular.ttf") format("ttf");
 }
 body {
+  margin: 0;
   font-family: "Proxima Nova", sans-serif;
 }
 
