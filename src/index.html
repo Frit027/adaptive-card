@@ -2,6 +2,7 @@
 <html lang="ru">
     <head>
         <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
         <title>Карточка</title>
         <link rel="stylesheet" href="styles/common.css">
         <link rel="stylesheet" href="styles/header.css">
@@ -20,9 +21,18 @@
                 <div class="header__text-container">
                     <div class="header__name">Владимир Вуйтек</div>
                     <div class="header__caption">Статистика за последние 30 дней</div>
+                    <div class="header__line-indicators">
+                        <span class="indicator__value indicator__value_positive">647</span>
+                        <span class="indicator__value indicator__value_light-gray">/</span>
+                        <span class="indicator__value indicator__value_dark-gray">29</span>
+                        <span class="indicator__value indicator__value_light-gray">/</span>
+                        <span class="indicator__value indicator__value_negative">413</span>
+                        <span class="indicator__value indicator__value_light-gray">/</span>
+                        <span class="indicator__value">ROI 23,9%</span>
+                    </div>
                 </div>
             </div>
-            <div class="header__indicators">
+            <div class="header__table-indicators">
                 <div class="indicator">
                     <span class="indicator__value indicator__value_positive">+</span>
                     <div class="separator separator_small"></div>
@@ -48,6 +58,10 @@
                     <div class="separator separator_small"></div>
                     <span class="indicator__value indicator__value_positive">+22 820</span>
                 </div>
+            </div>
+            <div class="header__status">
+                <span class="indicator__value indicator__value_neutral">30 дней</span>
+                <span class="indicator__value indicator__value_positive indicator__value_font-weight-600">+22 820</span>
             </div>
         </header>
         <div class="separator"></div>
@@ -77,7 +91,7 @@
                         <span class="coefficient__logo"></span>
                     </div>
                     <div>
-                        <div class="coefficient__text">Коэффициент</div>
+                        <div class="coefficient__text"></div>
                         <span class="coefficient__value">3.20</span>
                     </div>
                 </div>
