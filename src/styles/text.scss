@@ -1,8 +1,14 @@
+@import 'mixins';
+
 .text-container {
   position: relative;
   overflow: hidden;
-  margin: 0 24px 24px;
+  margin-bottom: 24px;
   transition: max-height .4s ease-in;
+
+  @include mobile {
+    margin-bottom: 16px;
+  }
 
   &_max-height {
     max-height: 120px;
