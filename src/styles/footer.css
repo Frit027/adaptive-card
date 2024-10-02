@@ -22,13 +22,13 @@
 }
 .footer__arrow {
   margin-bottom: 5px;
+  padding: 3px;
   border: solid #000000;
   border-width: 0 1px 1px 0;
-  display: inline-block;
-  padding: 3px;
   transform: rotate(45deg);
 }
 .footer__arrow_up {
+  margin-bottom: -5px;
   transform: rotate(-135deg);
 }
 .footer__content {
