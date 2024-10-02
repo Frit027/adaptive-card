@@ -5,6 +5,35 @@
   padding: 24px;
   background: #F0F1F266;
 
+  &__more-text-button {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #FFFFFF;
+    box-shadow: 2px 4px 12px 0 #00000014;
+    cursor: pointer;
+  }
+
+  &__arrow {
+    margin-bottom: 5px;
+    border: solid #000000;
+    border-width: 0 1px 1px 0;
+    display: inline-block;
+    padding: 3px;
+    transform: rotate(45deg);
+
+    &_up {
+      transform: rotate(-135deg);
+    }
+  }
+
   &__content {
     display: flex;
     justify-content: space-between;
