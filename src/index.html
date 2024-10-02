@@ -5,6 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <title>Карточка</title>
         <link rel="stylesheet" href="styles/common.css">
+        <link rel="stylesheet" href="styles/card.css">
         <link rel="stylesheet" href="styles/header.css">
         <link rel="stylesheet" href="styles/indicator.css">
         <link rel="stylesheet" href="styles/separator.css">
@@ -15,88 +16,90 @@
         <script defer src="index.js"></script>
     </head>
     <body>
-        <header class="header">
-            <div class="header__profile">
-                <img class="header__avatar" src="images/photo.png" alt="Avatar">
-                <div class="header__text-container">
-                    <div class="header__name">Владимир Вуйтек</div>
-                    <div class="header__caption">Статистика за последние 30 дней</div>
-                    <div class="header__line-indicators">
+        <div class="card">
+            <header class="header">
+                <div class="header__profile">
+                    <img class="header__avatar" src="images/photo.png" alt="Avatar">
+                    <div class="header__text-container">
+                        <div class="header__name">Владимир Вуйтек</div>
+                        <div class="header__caption">Статистика за последние 30 дней</div>
+                        <div class="header__line-indicators">
+                            <span class="indicator__value indicator__value_positive">647</span>
+                            <span class="indicator__value indicator__value_light-gray">/</span>
+                            <span class="indicator__value indicator__value_dark-gray">29</span>
+                            <span class="indicator__value indicator__value_light-gray">/</span>
+                            <span class="indicator__value indicator__value_negative">413</span>
+                            <span class="indicator__value indicator__value_light-gray">/</span>
+                            <span class="indicator__value">ROI 23,9%</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="header__table-indicators">
+                    <div class="indicator">
+                        <span class="indicator__value indicator__value_positive">+</span>
+                        <div class="separator separator_small"></div>
                         <span class="indicator__value indicator__value_positive">647</span>
-                        <span class="indicator__value indicator__value_light-gray">/</span>
-                        <span class="indicator__value indicator__value_dark-gray">29</span>
-                        <span class="indicator__value indicator__value_light-gray">/</span>
+                    </div>
+                    <div class="indicator">
+                        <span class="indicator__value indicator__value_neutral">=</span>
+                        <div class="separator separator_small"></div>
+                        <span class="indicator__value indicator__value_neutral">29</span>
+                    </div>
+                    <div class="indicator">
+                        <span class="indicator__value indicator__value_negative">—</span>
+                        <div class="separator separator_small"></div>
                         <span class="indicator__value indicator__value_negative">413</span>
-                        <span class="indicator__value indicator__value_light-gray">/</span>
-                        <span class="indicator__value">ROI 23,9%</span>
+                    </div>
+                    <div class="indicator">
+                        <span class="indicator__value indicator__value_normal">ROI, %</span>
+                        <div class="separator separator_small"></div>
+                        <span class="indicator__value indicator__value_positive">23,9%</span>
+                    </div>
+                    <div class="indicator">
+                        <span class="indicator__value indicator__value_normal">Прибыль</span>
+                        <div class="separator separator_small"></div>
+                        <span class="indicator__value indicator__value_positive">+22 820</span>
                     </div>
                 </div>
-            </div>
-            <div class="header__table-indicators">
-                <div class="indicator">
-                    <span class="indicator__value indicator__value_positive">+</span>
-                    <div class="separator separator_small"></div>
-                    <span class="indicator__value indicator__value_positive">647</span>
+                <div class="header__status">
+                    <span class="indicator__value indicator__value_neutral">30 дней</span>
+                    <span class="indicator__value indicator__value_positive indicator__value_font-weight-600">+22 820</span>
                 </div>
-                <div class="indicator">
-                    <span class="indicator__value indicator__value_neutral">=</span>
-                    <div class="separator separator_small"></div>
-                    <span class="indicator__value indicator__value_neutral">29</span>
+            </header>
+            <div class="separator"></div>
+            <main class="text-container text-container_max-height text-container_gradient">
+                <div class="text-container__text">
+                    В Кубке страны команда Унаи Эмери бессовестно размялась на «Виктории» из Ла-Коруньи (8:0).
+                    При этом серьёзные соперники: «Севилья», «Барселона» (даже кризисная) и «МЮ» (ещё более кризисный) —
+                    били «Вильярреал». ЛЧ не турнир для Эмери. Он гроссмейстер убогой ЛЕ. Поэтому у «Аталанты» есть шансы.
+                    Ей необходимо играть лишь на победу. Только выигрыш выводит её в плей-офф ЛЧ. А поражение в комплекте
+                    с победой «Янг Бойз» над «МЮ» оставляет бергамасков без еврокубковой весны. Гасперини вполне по силам
+                    одолеть команду Эмери. «Аталанта» уже обыгрывала недавно «Юве» и «Наполи». Поставлю на победу итальянского
+                    клуба.
                 </div>
-                <div class="indicator">
-                    <span class="indicator__value indicator__value_negative">—</span>
-                    <div class="separator separator_small"></div>
-                    <span class="indicator__value indicator__value_negative">413</span>
+            </main>
+            <footer class="footer">
+                <div class="footer__more-text-button">
+                    <span class="footer__arrow"></span>
                 </div>
-                <div class="indicator">
-                    <span class="indicator__value indicator__value_normal">ROI, %</span>
-                    <div class="separator separator_small"></div>
-                    <span class="indicator__value indicator__value_positive">23,9%</span>
-                </div>
-                <div class="indicator">
-                    <span class="indicator__value indicator__value_normal">Прибыль</span>
-                    <div class="separator separator_small"></div>
-                    <span class="indicator__value indicator__value_positive">+22 820</span>
-                </div>
-            </div>
-            <div class="header__status">
-                <span class="indicator__value indicator__value_neutral">30 дней</span>
-                <span class="indicator__value indicator__value_positive indicator__value_font-weight-600">+22 820</span>
-            </div>
-        </header>
-        <div class="separator"></div>
-        <main class="text-container text-container_max-height text-container_gradient">
-            <div class="text-container__text">
-                В Кубке страны команда Унаи Эмери бессовестно размялась на «Виктории» из Ла-Коруньи (8:0).
-                При этом серьёзные соперники: «Севилья», «Барселона» (даже кризисная) и «МЮ» (ещё более кризисный) —
-                били «Вильярреал». ЛЧ не турнир для Эмери. Он гроссмейстер убогой ЛЕ. Поэтому у «Аталанты» есть шансы.
-                Ей необходимо играть лишь на победу. Только выигрыш выводит её в плей-офф ЛЧ. А поражение в комплекте
-                с победой «Янг Бойз» над «МЮ» оставляет бергамасков без еврокубковой весны. Гасперини вполне по силам
-                одолеть команду Эмери. «Аталанта» уже обыгрывала недавно «Юве» и «Наполи». Поставлю на победу итальянского
-                клуба.
-            </div>
-        </main>
-        <footer class="footer">
-            <div class="footer__more-text-button">
-                <span class="footer__arrow"></span>
-            </div>
-            <div class="footer__line"></div>
-            <div class="footer__content">
-                <div class="footer__text-container">
-                    <div class="footer__title">ПРОГНОЗ</div>
-                    <div class="footer__text">Штрафное время: тотал меньше 16,5</div>
-                </div>
-                <div class="coefficient">
-                    <div class="coefficient__logo-container">
-                        <span class="coefficient__logo"></span>
+                <div class="footer__line"></div>
+                <div class="footer__content">
+                    <div class="footer__text-container">
+                        <div class="footer__title">ПРОГНОЗ</div>
+                        <div class="footer__text">Штрафное время: тотал меньше 16,5</div>
                     </div>
-                    <div>
-                        <div class="coefficient__text"></div>
-                        <span class="coefficient__value">3.20</span>
+                    <div class="coefficient">
+                        <div class="coefficient__logo-container">
+                            <span class="coefficient__logo"></span>
+                        </div>
+                        <div>
+                            <div class="coefficient__text"></div>
+                            <span class="coefficient__value"></span>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <button class="button" type="button">Сделать ставку</button>
-        </footer>
+                <button class="button" type="button">Сделать ставку</button>
+            </footer>
+        </div>
     </body>
 </html>
