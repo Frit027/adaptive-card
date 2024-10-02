@@ -1,7 +1,13 @@
+@import 'mixins';
+
 .separator {
   margin: 20px 24px;
   height: 1px;
   background: #0000001A;
+
+  @include mobile {
+    margin: 16px 0;
+  }
 
   &_small {
     width: 64px;

@@ -1,3 +1,5 @@
+@import 'mixins';
+
 .indicator {
   display: flex;
   flex-direction: column;
@@ -7,6 +9,10 @@
     font-size: 14px;
     font-weight: 600;
     line-height: 16px;
+
+    @include mobile {
+      font-weight: 400;
+    }
 
     &_normal {
       font-size: 12px;
@@ -24,6 +30,18 @@
 
     &_negative {
       color: #F64747;
+    }
+
+    &_light-gray {
+      color: #00000033;
+    }
+
+    &_dark-gray {
+      color: #A1AAB2;
+    }
+
+    &_font-weight-600 {
+      font-weight: 600;
     }
   }
 }

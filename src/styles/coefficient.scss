@@ -1,7 +1,13 @@
+@import 'mixins';
+
 .coefficient {
   display: flex;
   align-items: center;
   gap: 12px;
+
+  @include mobile {
+    gap: 8px;
+  }
 
   &__logo-container {
     width: 32px;
@@ -25,6 +31,16 @@
     font-weight: 400;
     line-height: 14px;
     color: #333333;
+
+    &::before {
+      content: 'Коэффициент';
+    }
+
+    @include mobile {
+      &::before {
+        content: 'Кэф';
+      }
+    }
   }
 
   &__value {
@@ -33,5 +49,10 @@
     font-weight: 500;
     line-height: 24px;
     color: #000000CC;
+
+    @include mobile {
+      font-size: 18px;
+      line-height: 22px;
+    }
   }
 }

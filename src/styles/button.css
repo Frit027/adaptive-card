@@ -2,7 +2,6 @@
 .button {
   min-width: 140px;
   height: 40px;
-  margin-left: 16px;
   border-radius: 4px;
   border: none;
   font-family: "Wix Madefor Text", sans-serif;
@@ -12,6 +11,16 @@
   color: #FFFFFF;
   background: #3498DB;
   cursor: pointer;
+}
+@media screen and (min-width: 744px) {
+  .button {
+    margin-left: 16px;
+  }
+}
+@media screen and (max-width: 743px) {
+  .button {
+    width: 100%;
+  }
 }
 
 /*# sourceMappingURL=button.css.map */

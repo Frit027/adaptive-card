@@ -5,6 +5,13 @@
   padding: 24px;
   background: rgba(240, 241, 242, 0.4);
 }
+@media screen and (max-width: 743px) {
+  .footer {
+    flex-direction: column;
+    padding: 16px;
+    gap: 16px;
+  }
+}
 .footer__more-text-button {
   position: absolute;
   display: flex;
@@ -36,8 +43,14 @@
   justify-content: space-between;
   width: 100%;
 }
+@media screen and (max-width: 743px) {
+  .footer__content {
+    gap: 12px;
+  }
+}
 .footer__line {
   position: absolute;
+  top: 0;
   left: 0;
   width: 2px;
   height: 100%;
@@ -55,10 +68,16 @@
   color: rgba(0, 0, 0, 0.4);
 }
 .footer__text {
-  font-size: 18px;
   font-weight: 600;
-  line-height: 20px;
   color: rgba(0, 0, 0, 0.8);
+  font-size: 18px;
+  line-height: 20px;
+}
+@media screen and (max-width: 743px) {
+  .footer__text {
+    font-size: 16px;
+    line-height: 18px;
+  }
 }
 
 /*# sourceMappingURL=footer.css.map */

@@ -8,6 +8,11 @@
   font-weight: 600;
   line-height: 16px;
 }
+@media screen and (max-width: 743px) {
+  .indicator__value {
+    font-weight: 400;
+  }
+}
 .indicator__value_normal {
   font-size: 12px;
   font-weight: 400;
@@ -21,6 +26,15 @@
 }
 .indicator__value_negative {
   color: #F64747;
+}
+.indicator__value_light-gray {
+  color: rgba(0, 0, 0, 0.2);
+}
+.indicator__value_dark-gray {
+  color: #A1AAB2;
+}
+.indicator__value_font-weight-600 {
+  font-weight: 600;
 }
 
 /*# sourceMappingURL=indicator.css.map */
